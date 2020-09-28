@@ -74,3 +74,19 @@ class GUI(QMainWindow):
     - getDisplayText()
     - clearDisplay()
 ```
+
+## Model of application
+      
+##### _1. Create model.py_ 
+     
+##### _2. Create function for calculator's operation_ 
+```
+ERROR_MSG = 'ERROR'
+def evaluateExpression(expression):
+    try:
+        result = str(eval(expression, {}, {}))
+    except Exception:
+        result = ERROR_MSG
+
+    return result
+```  
