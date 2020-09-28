@@ -90,3 +90,31 @@ def evaluateExpression(expression):
 
     return result
 ```  
+
+## Controller of application
+     
+##### _1. Create controller.py_ 
+     
+##### _2. Import following module_ 
+```
+from functools import partial
+```  
+    
+##### _3. Create Controller class_
+```
+class Controller:
+```
+ - ###### _Add constructor_
+```
+    def __init__(self, model, view):
+        self._evaluate = model
+        self._view = view
+        self._connectSignals()
+```
+ - ###### _Define Methods_
+    ######   (Which will create method for CalculateResult Build expression Connect signals and slots.)
+```
+    - calculateResult()
+    - buildExpression()
+    - connectSignals()
+```
