@@ -118,3 +118,29 @@ class Controller:
     - buildExpression()
     - connectSignals()
 ```
+
+## Main Class
+     
+##### _1. Create main.py_ 
+     
+##### _2. Import following module_ 
+```
+import sys
+from PyQt5.QtWidgets import QApplication
+from view import GUI
+from model import evaluateExpression
+from controller import Controller
+```  
+    
+##### _3. Create Main Function_
+```
+def main():
+    pycalc = QApplication(sys.argv)
+    view = GUI()
+    view.show()
+    model = evaluateExpression
+    Controller(model=model, view=view)
+    sys.exit(pycalc.exec_())
+if __name__ == "__main__":
+    main()
+```
