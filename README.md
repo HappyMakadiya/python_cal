@@ -32,3 +32,45 @@
 ```
 sys.exit(app.exec_())
 ```     
+
+# Calculator Using PyQt5 
+
+## View of application
+  
+      
+##### _1. Create view.py_ 
+     
+##### _2. Import following modules_ 
+```
+from PyQt5.QtCore import Qt  
+from PyQt5.QtWidgets import QMainWindow      
+from PyQt5.QtWidgets import QWidget    
+from PyQt5.QtWidgets import QGridLayout    
+from PyQt5.QtWidgets import QLineEdit    
+from PyQt5.QtWidgets import QPushButton     
+from PyQt5.QtWidgets import QVBoxLayout 
+```  
+    
+##### _3. Create GUI class and extend QMainWindow class_
+```
+class GUI(QMainWindow):
+```
+ - ###### _Add constructor and Parameter_
+```
+    - SuperClass Constructor
+    - setWindowTitle
+    - setFixedSize
+    - generalLayout
+    - centralWidget
+    - createDisplayLED
+    - createButtons
+```
+ - ###### _Define Methods_
+    ######   (Which will create method for Display Panel, Buttons layout and method for set/get/clear display)
+```
+    - createDisplayLED()
+    - createButtons()
+    - setDisplayText()
+    - getDisplayText()
+    - clearDisplay()
+```
